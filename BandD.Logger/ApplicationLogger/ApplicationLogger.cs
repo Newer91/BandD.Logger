@@ -25,7 +25,7 @@ namespace BandD.Logger.ApplicationLogger
                     ServisLoggerId = Guid.NewGuid(),
 
                     MethodsName = log.MethodName,
-                    ErrorMessage = log.Exeption.Message,
+                    ErrorMessage = log.ExeptionMessage,
                     Client = log.ClientName
                 };
 

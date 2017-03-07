@@ -7,18 +7,15 @@ namespace BandD.Logger
 {
     public class Logger : ILogger
     {
-        public void SaveErrorToDataBase(Guid applicationId, Guid clientId, Exception exeption)
+        public void SaveErrorToDataBase(Guid applicationId, Guid clientId, string exeptionMessage, string methodNames)
         {
             string aplication = ConfigurationService.WhatAplication(applicationId);
             string client = ConfigurationService.WhatClient(clientId);
 
-            LogHelp log = new LogHelp() { AplicationName = aplication, ClientName = client, Exeption = exeption, MethodName = exeption.TargetSite.Name };
+            LogHelp log = new LogHelp() { AplicationName = aplication, ClientName = client, ExeptionMessage = exeptionMessage , MethodName = methodNames };
 
             if (aplication == "BandD.Servis")
                 new BandDServisApplication().SaveError(log);
-
-
-            //new MailService().SendEmail(log);
         }
     }
 }

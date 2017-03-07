@@ -1,1 +1,1 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="BandD.Logger.Service1" CodeBehind="Logger.svc.cs" %>
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="BandD.Logger.Logger" CodeBehind="Logger.svc.cs" %>

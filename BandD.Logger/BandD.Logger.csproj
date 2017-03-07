@@ -79,10 +79,10 @@
     <Compile Include="Class\LogHelp.cs" />
     <Compile Include="Domain\BandDServisLogger.cs" />
     <Compile Include="EntityClassConfiguration\EntityClassConfiguration.cs" />
+    <Compile Include="ILogger.cs" />
     <Compile Include="Logger.svc.cs">
       <DependentUpon>Logger.svc</DependentUpon>
     </Compile>
-    <Compile Include="ILogger.cs" />
     <Compile Include="LoggerContext.cs" />
     <Compile Include="Migrations\201703071900407_CreateDatabase.cs" />
     <Compile Include="Migrations\201703071900407_CreateDatabase.Designer.cs">
@@ -91,7 +91,6 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\ConfigurationService.cs" />
-    <Compile Include="Service\MailService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
