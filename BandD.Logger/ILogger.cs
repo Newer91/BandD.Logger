@@ -9,6 +9,6 @@ namespace BandD.Logger
     public interface ILogger
     {
         [OperationContract]
-        void SaveErrorToDataBase(Guid applicationId, Guid clientId, string exeptionMessage, string methodNames);
+        void SaveErrorToDataBase(Guid applicationId, Guid clientId, string exeptionMessage, string methodNamesExeption,string methoNameCode);
     }
 }

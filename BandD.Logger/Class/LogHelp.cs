@@ -12,7 +12,9 @@ namespace BandD.Logger.Class
         [DataMember]
         public string ClientName { get; set; }
         [DataMember]
-        public string MethodName { get; set; }
+        public string MethodNameExeption { get; set; }
+        [DataMember]
+        public string MethodNameCode { get; set; }
         [DataMember]
         public string ExeptionMessage { get; set; }
     }

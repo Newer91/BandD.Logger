@@ -23,8 +23,8 @@ namespace BandD.Logger.ApplicationLogger
                 {
                     Date = DateTime.Now,
                     ServisLoggerId = Guid.NewGuid(),
-
-                    MethodsName = log.MethodName,
+                    MethodsNameExeption = log.MethodNameExeption,
+                    MethodsNameCode = log.MethodNameCode,
                     ErrorMessage = log.ExeptionMessage,
                     Client = log.ClientName
                 };
